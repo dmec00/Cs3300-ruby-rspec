@@ -11,8 +11,17 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  return true if arr.empty? && n.zero?
-  arr.combination(2).any? {|a, b| a + b == n }
+  return false if a.empty? or a.length == 1
+
+	h = Hash.new
+	a.each{|x| 
+		if h.key? x
+			return true
+		else
+			h[n - x] = n	
+		end
+	}
+	return false
 end
 
 # Part 2
