@@ -11,10 +11,10 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  return false if a.empty? or a.length == 1
+  return false if arr.empty? or arr.length == 1
 
 	h = Hash.new
-	a.each{|x| 
+	arr.each{|x| 
 		if h.key? x
 			return true
 		else
