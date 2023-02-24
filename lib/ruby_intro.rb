@@ -12,6 +12,7 @@ end
 
 def sum_to_n? arr, n
   (arr.empty? && n.zero?) || arr.permutation(2).any? { |a, b| a + b == n }
+  return true if arr.empty?
 end
 
 # Part 2
