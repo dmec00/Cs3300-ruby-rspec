@@ -3,15 +3,15 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  array.inject(0, :+)
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  sum(array.sort.last(2))
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  array.product(array).any? {|couple| sum(couple) == val}
 end
 
 # Part 2
