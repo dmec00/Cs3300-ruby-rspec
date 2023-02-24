@@ -3,15 +3,15 @@
 # Part 1
 
 def sum arr
-  Array.Inject(0, :+)
+  arr.inject(0, :+)
 end
 
 def max_2_sum arr
-  Sum(Array.Sort.Last(2))
+  sum(arr.sort.last(2))
 end
 
 def sum_to_n? arr, n
-  Array.Product(Array).Any? {|couple| Sum(Couple) == Val}
+  arr.product(arr).any? {|couple| sum(couple) == val}
 end
 
 # Part 2
