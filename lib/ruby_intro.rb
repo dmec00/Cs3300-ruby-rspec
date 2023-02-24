@@ -11,7 +11,7 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  (arr.empty? && n.zero? && n.zero?) || arr.permutation(2).any? { |a, b| a + b == n }
+  (arr.empty? && n.zero? ) && n.zero? || arr.permutation(2).any? { |a, b| a + b == n }
 end
 
 # Part 2
