@@ -11,7 +11,7 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  arr.product(arr).any? {|couple| sum(couple) == val}
+  arr.product(arr).any? {|couple| sum(couple) == n}
 end
 
 # Part 2
