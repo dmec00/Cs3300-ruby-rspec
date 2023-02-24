@@ -42,13 +42,13 @@ end
 # Part 3
 
 class BookInStock
-  attr_accessor :inst
+  attr_accessor :isbn
 	attr_accessor :price
 
-	def initialize(inst, price)
+	def initialize(isbn, price)
 		raise ArgumentError, 
-			"Illegal argument" if inst.empty?  or price <= 0
-		@inst = inst
+			"Illegal argument" if isbn.empty?  or price <= 0
+		@isbn = isbn
 		@price = price
 	end
 
